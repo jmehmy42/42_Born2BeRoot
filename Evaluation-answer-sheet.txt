@@ -54,3 +54,5 @@ uname -a or uname -v or uname --kernel-version
 Check that your user is within the "sudo" and "user42" groups.
 getent group sudo user42
 
+Create a new user and show that it follows the password policy we have created. 
+sudo adduser name_user
