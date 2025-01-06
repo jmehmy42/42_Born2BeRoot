@@ -8,10 +8,49 @@ This means you don’t need to worry about the computer’s setup. They create a
 
 Why you have chosen Debian❓
 Debian is a great choice because it is:
-
     Stable: It focuses on reliability and security, making it ideal for servers and long-term projects.
     Free and Open-Source: Debian is fully open-source, with no hidden costs.
     Large Software Support: It offers a huge library of software packages.
     Community Support: Debian has a strong, helpful community for solving issues.
-
 These make Debian perfect for learning and professional use.
+Rocky Linux is based on Red Hat Enterprise Linux (RHEL). It is designed for enterprise and server environments and more focuses on enterprise-grade stability.
+
+What is Differences between apt and aptitude ❓
+Here are the differences between APT and Aptitude:
+Command-Line Tool: APT is a lightweight and simple package manager for installing, updating, and removing software.
+                   Aptitude is more advanced with a user-friendly text-based interface.
+Interface: APT is purely command-line.
+           Aptitude offers both command-line and a menu-based interface for easier navigation.
+Features: APT is faster but has fewer features.
+          Aptitude provides better dependency management and detailed error handling.
+Default Tool: APT is the default tool in Debian and most derivatives.
+              Aptitude must be installed separately on some systems.
+For simple tasks, APT is enough. Use Aptitude if you need more control or a menu-based interface. 😊
+
+What is APPArmor❓
+AppArmor is a security tool used in Linux to protect your system by limiting what programs can do. It uses security profiles to control how programs access files, network resources, and other parts of the system. This helps prevent harmful actions by malicious software.
+
+What is LVM ❓
+LVM (Logical Volume Manager) is a tool in Linux that allows you to manage disk space more flexibly. It lets you combine multiple physical disks into one large virtual disk, resize partitions easily, and manage storage better. It makes it simpler to add or remove storage without losing data.
+
+Check no graphical interface !!!
+ls /usr/bin/*session
+
+what is ufw ❓
+UFW (Uncomplicated Firewall) is a tool in Linux to manage the system's firewall. It is simple to use and helps control network traffic by allowing or blocking connections. 
+UFW is great for beginners to set up basic security on their systems.
+
+Check that the UFW service is in use, run this command 
+sudo service ufw status
+
+what is ssh ❓
+SSH (Secure Shell) is a secure way to connect to another computer over a network. It is used to control and manage servers remotely by running commands or transferring files. SSH keeps the connection safe by encrypting the data.
+check that the SSH service is in use , run this command
+sudo service ssh status
+
+Check that you are using the Debian or Rocky operating system.
+uname -a or uname -v or uname --kernel-version
+
+Check that your user is within the "sudo" and "user42" groups.
+getent group sudo user42
+
